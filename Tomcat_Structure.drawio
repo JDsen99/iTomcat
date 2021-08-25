@@ -1,14 +1,80 @@
-<mxfile host="app.diagrams.net" modified="2021-08-25T07:26:35.886Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36 Edg/92.0.902.78" etag="HMbFm9Ui8m3_tZcDUZcy" version="14.9.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-08-25T08:17:45.301Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36 Edg/92.0.902.78" etag="WOq-BMEiTwJDJEoODKyn" version="14.9.6" type="github">
   <diagram id="ZnW7h1cuIhjjy6kqmGmk" name="第 1 页">
-    <mxGraphModel dx="848" dy="399" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2502" dy="399" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Y4byPEopzp-kJbTZnJWI-1" value="&lt;span style=&quot;color: rgb(18 , 18 , 18) ; font-family: , &amp;#34;blinkmacsystemfont&amp;#34; , &amp;#34;helvetica neue&amp;#34; , &amp;#34;pingfang sc&amp;#34; , &amp;#34;microsoft yahei&amp;#34; , &amp;#34;source han sans sc&amp;#34; , &amp;#34;noto sans cjk sc&amp;#34; , &amp;#34;wenquanyi micro hei&amp;#34; , sans-serif ; font-size: medium ; text-align: left ; background-color: rgb(255 , 255 , 255)&quot;&gt;BootStrap&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="10" y="400" width="120" height="60" as="geometry" />
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-35" value="Bootstrap" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-420" y="278" width="400" height="268" as="geometry" />
         </mxCell>
-        <mxCell id="Y4byPEopzp-kJbTZnJWI-7" value="&lt;pre style=&quot;margin: 0px ; font-size: 0.9em ; overflow: auto ; background: rgb(246 , 246 , 246) ; border-radius: 4px ; color: rgb(18 , 18 , 18) ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-indent: 0px ; text-transform: none ; word-spacing: 0px&quot;&gt;&lt;code class=&quot;language-java&quot; style=&quot;margin: 0px ; padding: 0px ; border-radius: 0px ; font-family: &amp;#34;menlo&amp;#34; , &amp;#34;monaco&amp;#34; , &amp;#34;consolas&amp;#34; , &amp;#34;andale mono&amp;#34; , &amp;#34;lucida console&amp;#34; , &amp;#34;courier new&amp;#34; , monospace ; font-size: inherit ; background-color: inherit&quot;&gt;&lt;span class=&quot;n&quot;&gt;Bootstrap&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bootstrap&lt;/span&gt; &lt;span class=&quot;o&quot; style=&quot;font-weight: 600&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot; style=&quot;font-weight: 600&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bootstrap&lt;/span&gt;&lt;span class=&quot;o&quot; style=&quot;font-weight: 600&quot;&gt;();&lt;/span&gt;&lt;br&gt;                &lt;br&gt;&lt;span class=&quot;n&quot;&gt;bootstrap&lt;/span&gt;&lt;span class=&quot;o&quot; style=&quot;font-weight: 600&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot; style=&quot;color: rgb(0 , 102 , 255)&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;o&quot; style=&quot;font-weight: 600&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="140" y="400" width="260" height="60" as="geometry" />
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-48" value="daemon: Bootstrap" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-35">
+          <mxGeometry y="26" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-49" value="catalinaDaemon: Object" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-35">
+          <mxGeometry y="52" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-37" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-35">
+          <mxGeometry y="78" width="400" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-38" value="main()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-35">
+          <mxGeometry y="86" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-50" value="init()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-35">
+          <mxGeometry y="112" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-51" value="initClassLoaders()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-35">
+          <mxGeometry y="138" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-64" value="createClassLoader(String name, ClassLoader parent) ClassLoader" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-35">
+          <mxGeometry y="164" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-52" value="load()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-35">
+          <mxGeometry y="190" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-53" value="start()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-35">
+          <mxGeometry y="216" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-54" value="stopServer(arguments:String[])" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-35">
+          <mxGeometry y="242" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-39" value="" style="shape=stencil(fZNNbsMgEIVPw/YJGGCGdZreI1KcGtW1I8dpm9vHFpVqHJndMLxvfsRD0eHWnq6Nsvo2jcNn85POU6voTVmb+rYZ0zRHio6KDpdhbD7G4d6f8/l6WpRL9DV8LxV+M6eh9QJZ/dgk3rO8S/1K7mC4kDtoty83DF+WNx4c9gGyMK4ALINNBXjpQASiygYCV3ZwFs7uAz6Cyp29ga8AQcC+AIIBVZZmgbElEMGVVxC3HYlDdSSJ0KEAxMLLPhBpu4MwpAYESDnSXCLWrKFfrLdK/SFz8G/cS+q67Pv1/dbocyp/Ejo+AQ==);fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="388.44827586206884" y="317.41381625471445" width="4.413809940732759" height="9.10344617120151" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-55" value="Catalina" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-420" y="610" width="190" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-56" value="configFile: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-55">
+          <mxGeometry y="26" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-59" value="parentClassLoader: ClassLoader " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-55">
+          <mxGeometry y="52" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-60" value="server: Server " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-55">
+          <mxGeometry y="78" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-57" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-55">
+          <mxGeometry y="104" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-58" value="start()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-55">
+          <mxGeometry y="112" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-67" value="load()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-55">
+          <mxGeometry y="138" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-68" value="initNaming()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Y4byPEopzp-kJbTZnJWI-55">
+          <mxGeometry y="164" width="190" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-61" value="&lt;font style=&quot;font-size: 11px&quot;&gt;init()&lt;br&gt;调用 initClassLoaders()方法 创建classLoader&lt;br&gt;反射调用&lt;span style=&quot;font-size: 12px ; font-weight: 700&quot;&gt;Catalina&lt;/span&gt;的setParetClassLoader()方法给其赋值&lt;br&gt;最后给catalinaDaemon赋值&lt;br&gt;&lt;/font&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-660" y="270" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-62" value="&lt;span style=&quot;font-size: 11px&quot;&gt;initClassLoaders()&amp;nbsp;&lt;br&gt;调用createClassLoader()创建&lt;br&gt;commonLoader、catalinaLoader、sharedLoader&lt;br&gt;&lt;/span&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-860" y="271.97" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-65" value="&lt;span style=&quot;font-weight: 700&quot;&gt;Bootstrap.&lt;/span&gt;load()&lt;br&gt;反射执行&lt;span style=&quot;font-weight: 700&quot;&gt;Catalina&lt;/span&gt;&lt;span style=&quot;font-size: 11px&quot;&gt;的load()方法给其赋值&lt;/span&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-660" y="446" width="170" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Y4byPEopzp-kJbTZnJWI-66" value="&lt;span style=&quot;font-weight: 700&quot;&gt;Catalina&lt;/span&gt;&lt;span style=&quot;font-weight: 700&quot;&gt;.&lt;/span&gt;load()&lt;br&gt;initNaming() 初始化名字&lt;br&gt;然后 解析config/server.xml文件&lt;br&gt;getServer().init()" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="610" width="168" height="65" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
