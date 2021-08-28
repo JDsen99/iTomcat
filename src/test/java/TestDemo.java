@@ -8,7 +8,7 @@ import org.slf4j.Logger;
  */
 public class TestDemo {
     public static void main(String[] args) {
-        Logger logger = LogUtil.getLogger();
+        Logger logger = LogUtil.getLogger(TestDemo.class);
         logger.info("111");
     }
 }

@@ -10,7 +10,15 @@ import org.slf4j.LoggerFactory;
  * @createDate 2021/8/28-15:56
  */
 public class LogUtil {
+
+    public static Logger getLogger(Class clazz) {
+        return LoggerFactory.getLogger(clazz);
+    }
+
+    public static Logger getLogger(String name) {
+        return LoggerFactory.getLogger(name);
+    }
     public static Logger getLogger() {
-        return LoggerFactory.getLogger("test");
+        return LoggerFactory.getLogger("app");
     }
 }
