@@ -5,5 +5,5 @@ package com.ss.itomcat.catalina;
  * @description
  * @createDate 2021/8/28-17:20
  */
-public interface Container {
+public interface Container extends Lifecycle{
 }
