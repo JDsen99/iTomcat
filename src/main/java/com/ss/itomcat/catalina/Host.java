@@ -20,6 +20,12 @@ public interface Host extends Container{
     Engine getEngine();
 
     /**
+     * 设置主机名
+     * @param name 主机名
+     */
+    void setName(String name);
+
+    /**
      * 获取主机名
      * @return
      */
