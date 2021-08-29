@@ -17,7 +17,7 @@ public interface Service extends Lifecycle{
      * 获取引擎列表
      * @return
      */
-    Engine[] getEngine();
+    Engine[] getEngines();
 
     /**
      * 添加引擎
