@@ -12,12 +12,15 @@ import com.ss.itomcat.util.LifecycleBase;
  */
 public class StandardEngine extends LifecycleBase implements Engine {
 
-
+    private Service service;
+    private Host[] hosts = new Host[0];
 
 
     @Override
     protected void initInternal() {
-
+        for (int i = 0; i < hosts.length; i++) {
+            hosts[i].init();
+        }
     }
 
     @Override
@@ -27,22 +30,22 @@ public class StandardEngine extends LifecycleBase implements Engine {
 
     @Override
     public Service getService() {
-        return null;
+        return this.service;
     }
 
     @Override
     public void setService(Service service) {
-
+        this.service = service;
     }
 
     @Override
     public void setHost(Host[] hosts) {
-
+        this.hosts = hosts;
     }
 
     @Override
     public Host[] getHosts() {
-        return new Host[0];
+        return this.hosts;
     }
 
     @Override
@@ -54,4 +57,5 @@ public class StandardEngine extends LifecycleBase implements Engine {
     public void destroy() {
 
     }
+
 }

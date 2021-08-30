@@ -6,6 +6,7 @@ import com.ss.itomcat.catalina.Service;
 import com.ss.itomcat.util.LifecycleBase;
 
 import javax.naming.NamingEnumeration;
+import java.util.Arrays;
 
 /**
  * @author JDsen99
@@ -21,7 +22,9 @@ public class StandardService extends LifecycleBase implements Service {
 
     @Override
     protected void initInternal() {
-
+        for (Engine engine : engines) {
+            engine.init();
+        }
     }
 
     @Override
@@ -55,5 +58,13 @@ public class StandardService extends LifecycleBase implements Service {
     @Override
     public void destroy() {
 
+    }
+
+    @Override
+    public String toString() {
+        return "StandardService{" +
+                "server=" +
+                ", engines=" + Arrays.toString(engines) +
+                '}';
     }
 }

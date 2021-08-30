@@ -5,7 +5,8 @@ import com.ss.itomcat.catalina.Service;
 import com.ss.itomcat.net.Connector;
 import com.ss.itomcat.util.LifecycleBase;
 
-import java.util.concurrent.Executor;
+import java.util.Arrays;
+import java.util.concurrent.*;
 
 /**
  * @author JDsen99
@@ -19,7 +20,30 @@ public class StandardServer extends LifecycleBase implements Server {
     private Executor executor;
     @Override
     protected void initInternal() {
+        
+        for (Service service : services){
+            service.init();
+        }
+        for (Connector connector : connectors) {
+            connector.init();
+        }
 
+        // TODO: 硬编码定义线程池
+        int corePoolSize = 10;
+        int maximumPoolSize = 30;
+        long keepAliveTime = 60L;
+        TimeUnit unit = TimeUnit.SECONDS;
+        BlockingQueue<Runnable> workQueue = new ArrayBlockingQueue(30);
+        ThreadFactory threadFactory = Executors.defaultThreadFactory();
+        RejectedExecutionHandler handler = new ThreadPoolExecutor.AbortPolicy();
+
+        this.executor = new ThreadPoolExecutor(corePoolSize,
+                maximumPoolSize,
+                keepAliveTime,
+                unit,
+                workQueue,
+                threadFactory,
+                handler);
     }
 
     @Override
@@ -58,5 +82,14 @@ public class StandardServer extends LifecycleBase implements Server {
     @Override
     public void destroy() {
 
+    }
+
+    @Override
+    public String toString() {
+        return "StandardServer{" +
+                "services=" + Arrays.toString(services) +
+                ", connectors=" + Arrays.toString(connectors) +
+                ", executor=" + executor +
+                '}';
     }
 }

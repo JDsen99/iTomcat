@@ -10,63 +10,40 @@ import com.ss.itomcat.util.LifecycleBase;
  * @description
  * @createDate 2021/8/29-16:33
  */
-public class StandardWrapper extends LifecycleBase implements Wrapper {
+public class StandardWrapper implements Wrapper {
+    /**
+     * 类名
+     */
+    private String className;
+    /**
+     * servlet名
+     */
+    private String servletName;
+    /**
+     * url匹配路径
+     */
+    private String urlPattern;
+
+    /**
+     * servlet
+     */
+    private Servlet servlet;
+
+    /**
+     * 上下文
+     */
+    private Context context;
 
 
 
 
     @Override
-    protected void initInternal() {
+    public void init() {
 
     }
 
     @Override
-    protected void startInternal() {
-
-    }
-
-    @Override
-    public Servlet getServlet() {
-        return null;
-    }
-
-    @Override
-    public void setServlet(Servlet servlet) {
-
-    }
-
-    @Override
-    public void setUrlPattern(String urlPattern) {
-
-    }
-
-    @Override
-    public String getUrlPattern() {
-        return null;
-    }
-
-    @Override
-    public void setClassName(String className) {
-
-    }
-
-    @Override
-    public String getClassName() {
-        return null;
-    }
-
-    @Override
-    public void setServletName(String servletName) {
-
-    }
-
-    @Override
-    public String getServletName() {
-        return null;
-    }
-
-    @Override
-    public void setContext(Context context) {
+    public void start() {
 
     }
 
@@ -78,5 +55,49 @@ public class StandardWrapper extends LifecycleBase implements Wrapper {
     @Override
     public void destroy() {
 
+    }
+    @Override
+    public Servlet getServlet() {
+        return null;
+    }
+
+    @Override
+    public void setServlet(Servlet servlet) {
+        this.servlet = servlet;
+    }
+
+    @Override
+    public void setUrlPattern(String urlPattern) {
+        this.urlPattern = urlPattern;
+    }
+
+    @Override
+    public String getUrlPattern() {
+        return this.urlPattern;
+    }
+
+    @Override
+    public void setClassName(String className) {
+        this.className = className;
+    }
+
+    @Override
+    public String getClassName() {
+        return this.className;
+    }
+
+    @Override
+    public void setServletName(String servletName) {
+        this.servletName = servletName;
+    }
+
+    @Override
+    public String getServletName() {
+        return this.servletName;
+    }
+
+    @Override
+    public void setContext(Context context) {
+        this.context = context;
     }
 }
