@@ -29,7 +29,7 @@ public interface Context extends Container{
      * 查找Servlet
      * @return
      */
-    Wrapper findWrapper();
+    Wrapper findWrapper(String servletName);
 
     /**
      * 设置web的ClassLoader

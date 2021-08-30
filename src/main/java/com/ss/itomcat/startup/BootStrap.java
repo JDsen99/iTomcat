@@ -44,11 +44,11 @@ public class BootStrap {
         try {
             daemon.load();
         } catch (Exception e) {
-            log.error("load error");
+            log.error("load error",e);
         }
 
         try {
-            daemon.start();
+            //daemon.start();
         } catch (Exception e) {
             log.error("start error");
         }
@@ -66,15 +66,15 @@ public class BootStrap {
      */
     private void load() throws Exception {
         String methodName = "load";
-        Method method = catalinaDaemon.getClass().getMethod(methodName,null);
-        method.invoke(catalinaDaemon,null);
-        log.debug("{} load",this.getClass().getSimpleName());
+        Method method = catalinaDaemon.getClass().getMethod(methodName,(Class [])null);
+        method.invoke(catalinaDaemon,(Class [])null);
+        log.info("{} load",this.getClass().getSimpleName());
     }
 
     private void start() throws Exception {
         String methodName = "start";
-        Method method = catalinaDaemon.getClass().getMethod(methodName,null);
+        Method method = catalinaDaemon.getClass().getMethod(methodName,(Class [])null);
         method.invoke(catalinaDaemon,null);
-        log.debug("{} start",this.getClass().getSimpleName());
+        log.info("{} start",this.getClass().getSimpleName());
     }
 }
