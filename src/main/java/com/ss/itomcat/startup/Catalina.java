@@ -25,17 +25,16 @@ public class Catalina {
 
 
 
-    private void load() {
+    public void load() {
         try {
             Digester digester = createStartDigester();
             File file = configFile();
             FileInputStream inputStream = new FileInputStream(file);
             digester.push(this);
             digester.parse(inputStream);
-        } catch (DocumentException | FileNotFoundException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
-
         getServer().init();
     }
 
@@ -45,7 +44,7 @@ public class Catalina {
                 .getPath()
                 .replace("/target/classes","") + "source/";
 
-        File file = new File(catalinaBase);
+        File file = new File(configFile);
         if (!file.isAbsolute()) {
             file = new File(catalinaBase,configFile);
         }
