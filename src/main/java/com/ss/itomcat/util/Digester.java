@@ -31,7 +31,7 @@ import java.util.List;
  * @createDate 2021/8/28-17:27
  */
 public class Digester {
-    //TODO 用digester 依赖替换
+    //TODO 用digester 依赖替换 tomcat 使用digester依赖源码 https://www.jianshu.com/p/8d9a6ae40303
 
     private Catalina root;
 
