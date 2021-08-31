@@ -67,7 +67,8 @@ public class StandardServer extends LifecycleBase implements Server {
         Connector[] result = new Connector[connectors.length+1];
         System.arraycopy(connectors,0,result,0,connectors.length);
         result[connectors.length] = connector;
-        connectors = result;
+        this.connectors = result;
+
     }
 
     @Override

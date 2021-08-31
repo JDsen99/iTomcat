@@ -38,7 +38,7 @@ public class Connector extends LifecycleBase {
     }
 
     public int getPort() {
-        return port;
+        return this.port;
     }
 
     public void setPort(int port) {
