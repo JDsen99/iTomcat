@@ -48,27 +48,27 @@ public class Http11Protocol implements ProtocolHandler{
 
     @Override
     public void setExecutor(Executor executor) {
-
+        this.executor = executor;
     }
 
     @Override
     public Connector getConnector() {
-        return null;
+        return this.connector;
     }
 
     @Override
     public void setConnector(Connector connector) {
-
+        this.connector = connector;
     }
 
     @Override
     public Executor getExecutor() {
-        return null;
+        return this.executor;
     }
 
     @Override
     public int getPort() {
-        return 0;
+        return this.connector.getPort();
     }
 
 
