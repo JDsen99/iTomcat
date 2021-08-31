@@ -45,8 +45,6 @@ public class Digester {
             Document doc = reader.read(inputStream);
             Element rootElement = doc.getRootElement();
             Server server = createServer();
-            System.out.println(rootElement.getName());
-            System.out.println(rootElement.selectNodes("Connector"));
             //初始化service
             List<Element> serviceList = rootElement.selectNodes("Service");
             Service[] services = new Service[serviceList.size()];
