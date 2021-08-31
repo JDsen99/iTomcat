@@ -65,16 +65,20 @@ public class BootStrap {
      * @throws Exception
      */
     private void load() throws Exception {
+        Long l1 = System.currentTimeMillis();
         String methodName = "load";
         Method method = catalinaDaemon.getClass().getMethod(methodName,(Class [])null);
         method.invoke(catalinaDaemon,(Class [])null);
-        log.info("{} load",this.getClass().getSimpleName());
+        Long l2 = System.currentTimeMillis();
+        log.info("{} loading completed takes {} ms",this.getClass().getSimpleName(),(l2 - l1));
     }
 
     private void start() throws Exception {
+        Long l1 = System.currentTimeMillis();
         String methodName = "start";
         Method method = catalinaDaemon.getClass().getMethod(methodName,(Class [])null);
         method.invoke(catalinaDaemon,null);
-        log.info("{} start",this.getClass().getSimpleName());
+        Long l2 = System.currentTimeMillis();
+        log.info("{} start completed takes {} ms",this.getClass().getSimpleName(),(l2 - l1));
     }
 }
